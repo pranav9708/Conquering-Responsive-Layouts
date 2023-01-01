@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    /* padding:0; */
+}
+#parent{
+    background-color: blue;
+
+    /* center align  */
+    margin:0 auto;
+    width:80%;
+    padding:20px;
+    
+}
+#child{
+    background-color:blueviolet;
+    width:50%;
+    height:250px;
+}
