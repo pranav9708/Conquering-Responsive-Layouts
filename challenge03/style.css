@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+}
+
+.intro{
+    background-color:#23424A;
+    color:white;
+}
+
+.intro-content{
+    margin-left: 5rem;
+    padding:50px 0;
+    width:50%;
+    max-width:750px;
+}
+
+.intro-content h1{
+    font-family: 'Roboto Black';
+    font-size: 3rem;
+}
+
+.intro-content p{
+    font-family: 'Roboto Regular';
+    font-size: 1.5rem;
+}
+
+.intro-button{
+    font-family: 'Roboto Bold';
+    font-size:1.5rem;
+    background-color:#38CFD9;
+    border-radius: 1.5em;
+    padding:0.5em 1.5em;
+    border-style: none;
+    cursor: pointer;
+}
