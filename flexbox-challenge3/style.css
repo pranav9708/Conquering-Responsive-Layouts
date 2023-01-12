@@ -73,6 +73,11 @@ header {
     padding: .5em 0;
 }
 
+.nav{
+    display:flex;
+    justify-content: space-between;
+}
+
 .nav__list {
     margin: 0;
     padding: 0;
@@ -82,9 +87,12 @@ header {
 
 .nav__link {
     color: #fff;
-    padding:1em;
     text-decoration: none;
     text-transform: uppercase;;
+}
+
+.nav__item + .nav__item {
+    margin-left:1em;
 }
 
 .nav__link--button {
@@ -97,6 +105,10 @@ header {
 .nav__link:hover {
     opacity: .75;
 }
+
+/* .nav__item-push-right{
+    margin-left: auto;
+} */
 
 
 .hero {
