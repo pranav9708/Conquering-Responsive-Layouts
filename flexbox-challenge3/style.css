@@ -113,6 +113,10 @@ header {
     opacity: .75;
 }
 
+.nav__list--primary{
+    margin:0 auto;
+}
+
 /* .nav__item-push-right{
     margin-left: auto;
 } */
