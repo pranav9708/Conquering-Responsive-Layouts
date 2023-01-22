@@ -121,6 +121,7 @@ header {
    
    Works the same :) */
 .nav {
+    font-size:1rem;
     visibility: hidden;
     height: 0;
     position: absolute;
@@ -132,6 +133,36 @@ header {
     position: relative;
 } 
 
+.nav__list{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+.nav__item{
+    margin-top: .75em;
+}
+
+.nav__link{
+    text-transform: uppercase;
+    text-decoration: none;
+    color:white;
+}
+
+.nav__link--button{
+    padding: .25em 0.75em;
+    background: #FFF;
+    color:#23424A;
+    border-radius:100px;
+}
+
+.nav__link:hover,.nav__link:focus{
+    opacity:0.5;
+}
+
+.nav__list--primary{
+    margin-bottom: 2em;
+}
 
 .logo {
     height: 30px;
@@ -166,22 +197,6 @@ header {
 
 }
 
-.nav__item{
-    list-style: none;
-    margin-left:-2em;
-}
-
-.nav__link{
-    text-decoration: none;
-    color:white;
-}
-
-.nav__link--button{
-    background-color: white;
-    color: #136c72;
-    border:4px solid white;
-    border-radius:15px;
-}
 
 @media (min-width: 800px) {
 
@@ -191,20 +206,26 @@ header {
     }
 
     .nav {
-        margin-left: 1em;
         visibility: visible;
         display: flex;
-        justify-content: space-between;
+        height:auto;
+        align-items: center;
+        justify-content: flex-end;
+        /* changing from absolute to avoid overlapping */
+        position:relative;
     }
 
     .nav__list{
         display:flex;
-        align-items: center;
+        margin:0;
     }
 
+    /* .nav__list--primary{
+        margin: 0 auto;
+    } */
+
     .nav__item{
-        margin-left: 1em;
-        list-style: none;
+        margin:0 0 0 1.5em;
     }
 
     .row {
